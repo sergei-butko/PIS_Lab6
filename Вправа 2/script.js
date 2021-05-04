@@ -1,5 +1,5 @@
 async function showWeather() {
-    let response = await fetch('http://api.openweathermap.org/data/2.5/' +
+    let response = await fetch('https://api.openweathermap.org/data/2.5/' +
         'weather?lat=50.9216&lon=34.800289&appid=f4022d7e588d515ae06e4cb8c43e2d10');
     let weather = await response.json();
     console.log(weather);
